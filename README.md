@@ -1,5 +1,5 @@
 # Data-Visualization-Project
-## Use Splinter to scrape data scientist job posting among 10 major cities:
+## Use Python to scrape data scientist job posting among 10 major cities:
     - Phoenix
     - Portland
     - Houston
