@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Career Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="../static/style.css" rel="stylesheet">
+  <link href="../static/style(2).css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#"></a> -->
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#">About</a></li> -->
+          <li><a href="#"></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+    
+  <div class="row">
+      <div class="container-fluid">
+        <div class="col-12 mx-auto">
+          <div class="image">
+            <!-- <img src= "../static/Images/Alabama.jpg" class="text-center" > -->
+            <!-- <p class="text-center">Possible Titles</p> -->
+            <!-- <p><button class="btn btn-large">Big Button</button></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row align-items-start">
+    <div class= "container-fluid">
+      <div class="col-md-4">
+        <!-- <div class="about" id="about">
+          <h1></h1>
+          <img src="../static/Images/All Key Words.png" class="text-center">
+        </div> -->
+      </div>
+      <div class="col-md-4" id="cards">
+          <ul class="cards">
+  
+              <li class="card">
+                <h1>Welcome</h1>
+                
+                <p>This website presents Data Scientist job opportunites in twelve different cites.<br>
+                  Using the data we scraped from Glassdoor we are able to:<br>
+                  - Store the information regarding each job posting as one document in MongoDB. The total number of documents is 4000+.<br>
+                  - Explore the correlations between locations, companies, salary and ratings.<br>
+                  - Dig into job descriptions to identify the most seek-after skills.<br>
+                  - Achieve data visulization through HTML, CSS, Javascript and Tableau.<br>
+                </p>
+              
+              </li>
+              <li class="card">
+                <h1>Cities Explored</h1>
+            
+                <p> - Phoenix<br>
+                    - Portland<br>
+                    - Houston<br>
+                    - Seattle<br>
+                    - San Francisco<br>
+                    - Austin<br>
+                    - San Jose<br>
+                    - Boston<br>
+                    - Washington<br>
+                    - Philadelphia<br>
+                    - Arlington<br>
+                    - Gibbstown<br>
+                  </p>
+              </li>
+             
+              <li class="card">
+                <h1>Word Frequency Cloud</h1>
+            
+                <p>- Use regular expression to split the job_description string into individual words.<br>
+
+                  - Design word_counter function to count the frequency of each word<br>
+                  
+                  - Set up a stopwords list based on NLTK's list of english stopwords: https://gist.github.com/sebleier/554280. Add words to the list as needed.<br>
+                  
+                  - Set up a targetwords list to analyze the frequency of specific programming skills.<br>
+                  
+                  - Cluster words with similar meanings, such as "analysis", "analyses" and "analytical".<br>
+                  
+                  - To draw the word cloud, we referred to the d3 Word Cloud Layout library: https://github.com/jasondavies/d3-cloud<br>
+                  
+                  - Tweak the color using d3-scale-chromatic: https://github.com/d3/d3-scale-chromatic<br>
+                  </p>
+              </li>
+            </ul>
+      </div>
+      <div class="col-md-4" >
+          <!-- <img src="../static/Images/Programming Skills.png" class="text-center" id="tools"> -->
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-start">
+      <div class= "container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="dashboards">
+            <div class='tableauPlaceholder' id='viz1542337973082' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_assignment&#47;SalaryvsCity&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='project_assignment&#47;SalaryvsCity' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;project_assignment&#47;SalaryvsCity&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542337973082');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+  </div>
+  <!-- <div class="row align-items-start">
+      <div class= "container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="../static/Images/Programming Skills.png" class="text-center" id="tools1">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+  </div> -->
+
+
+  <div class="container">
+      <h2></h2>
+              <!-- carousel-->
+           <button type="button" class="btn btn-lg btn-primary"  data-toggle="collapse" data-target="#demo" id="map_icon">Maps</button> 
+      
+              <div id="demo" class="collapse">
+                  <div class="container">
+                      <div class="row" id="fancy">
+                          <div class="col align-self-center">
+                              <base href=#>
+                                  <div id="carousel">
+                                      <figure id="spinner">
+
+                                          <img src="../static/Images/tableau1.png" onclick="showMap(1)" class="maps">
+                                          <img src="../static/Images/tableau2.png" onclick="showMap(2)"class="maps">
+                                          <img src="../static/Images/tablaeu3.png" onclick="showMap(3)"class="maps">
+                                          <img src="../static/Images/tableau4.png" onclick="showMap(4)"class="maps">
+
+                                      </figure>
+                                  </div>
+                              <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+                          <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+                      </div>
+                  </div>
+      
+              </div>
+          </div>
+      </div>
+
+      <div id="tableau1">
+          <div class='tableauPlaceholder' id='viz1542333669971' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataStateCitiesNumbers&#47;NumberofJobs&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlassDoorDataStateCitiesNumbers&#47;NumberofJobs' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataStateCitiesNumbers&#47;NumberofJobs&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542333669971');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+      <div id="tableau2">
+          <div class='tableauPlaceholder' id='viz1542333922611' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCitiesNumbers&#47;Cities&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlassDoorDataCitiesNumbers&#47;Cities' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCitiesNumbers&#47;Cities&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542333922611');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      </div>
+      <div id="tableau3">
+          <div class='tableauPlaceholder' id='viz1542333947173' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCitiesAvgSalary&#47;CitiesAvgSalary&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlassDoorDataCitiesAvgSalary&#47;CitiesAvgSalary' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCitiesAvgSalary&#47;CitiesAvgSalary&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542333947173');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      </div>
+      <div id="tableau4">
+          <div class='tableauPlaceholder' id='viz1542333999235' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCompanyAvgRating&#47;CityCompanyAvgRating&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GlassDoorDataCompanyAvgRating&#47;CityCompanyAvgRating' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gl&#47;GlassDoorDataCompanyAvgRating&#47;CityCompanyAvgRating&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1542333999235');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      </div>
+  </div>
+
+  <div class="row align-items-start">
+      <div class= "container-fluid">
+
+        <div class="col-md-12">
+          <img src="../static/Images/All Key Words.png" class="text-center" id="tools"> 
+        </div>
+
+      </div>
+  </div>
+  <div class="row align-items-start">
+      <div class= "container-fluid">
+        
+        <div class="col-md-12">
+          <img src="../static/Images/Programming Skills.png" class="text-center" id="tools1">
+        </div>
+       
+      </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- carousel -->
+<script>
+      var angle = 0;
+   function galleryspin(sign) { 
+   spinner = document.querySelector("#spinner");
+   if (!sign) { angle = angle + 90; } else { angle = angle - 90; }
+   spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+   }
+</script>
+
+<script>
+    $(document).ready(function() {
+            // Transition effect for navbar 
+            $(window).scroll(function() {
+              // checks if window is scrolled more than 500px, adds/removes solid class
+              if($(this).scrollTop() > 370) { 
+                  $('.navbar').addClass('solid');
+              } else {
+                  $('.navbar').removeClass('solid');
+              }
+            });
+    });
+  </script>
+
+<script src="https://d3js.org/d3.v5.js"></script>
+<script src="../static/tableau.js"></script>
+
+</body>
+
+
+<!-- navbar -->
+
+
+<!-- <script src="../static/app.js"></script> -->
+
+
+</html>
