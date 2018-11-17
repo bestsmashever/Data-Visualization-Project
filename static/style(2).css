@@ -1,0 +1,57 @@
+.container{
+    background-color: transparent;
+    padding-top: 10px;
+}
+div#carousel { 
+    perspective: 1200px; 
+    background: transparent; 
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+    overflow: hidden; 
+  }
+
+  #fancy{
+
+    width: 100%;
+    height:570px;
+
+}
+
+/* #map_icon{
+    color:red;
+} */
+.maps{
+  box-shadow: 0 9px 9px -9px #333;
+}
+
+  figure#spinner { 
+    transform-style: preserve-3d; 
+    height: 300px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  figure#spinner img { 
+    width: 40%; max-width: 425px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
+  }
+  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+  }
+  figure#spinner img:nth-child(2) { transform: rotateY(-90deg); }
+  figure#spinner img:nth-child(3) { transform: rotateY(-180deg); }
+  figure#spinner img:nth-child(4) { transform: rotateY(-270deg); }
+
+  div#carousel ~ span { 
+    color: black; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 2rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -6rem; 
+    border-bottom: none; 
+    line-height: 0; }
+  div#carousel ~ span:hover { color: #888; cursor: pointer; }

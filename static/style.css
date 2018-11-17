@@ -1,0 +1,234 @@
+.image {
+  background-color: #c6ae9a;
+  background: url(./Images/Alabama.png) no-repeat center center;
+  background-size: cover;
+  /* height: 570px; */
+  height: 755px;
+  margin-top: -20px;
+  /* width: 100% \9; */
+  font-weight: 650;
+  font-size: 50px;
+  filter: sepia(80%);
+  width: 100%;
+  
+  
+}
+
+/* @media (max-width: 1199.98px) {
+  background-color: #c6ae9a;
+  background: url(./Images/Alabama.jpg) no-repeat center center;
+  background-size: cover;
+  /* height: 570px; */
+  /* height: auto;
+  width: 100% \9;
+
+} */ */
+.image .heading {
+  color: black;
+  text-align: center;
+  padding-top: 200px;
+}
+.image p {
+  text-align: center;
+  padding: 20px 60px;
+}
+/* .image p .btn {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.image p .btn:hover {
+  color: black;
+  border-color: black; */
+/* } */
+
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+}
+.navbar-default .navbar-brand:hover {
+  color: black;
+  border: 1px solid black;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+  margin: 10px 5px 5px 5px;
+  font-family: Florence, cursive;;
+  
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+  color: black;
+  border: 1px solid black;
+  font-family: Florence, cursive;;
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: black;
+  text-decoration: none;
+  font-family: Florence, cursive;;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: black;
+  font-family: Florence, cursive;;
+}
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #c6ae9a;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: black;
+  background-color: black;
+  background: url(./Images/Alabama.png) no-repeat center center;
+  filter: opacity(20%);
+  filter: sepia(80%);
+
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: c6ae9a;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #c6ae9a;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px c6ae9a;
+}
+.navbar.solid .navbar-brand {
+  color: white;
+  transition: color 1s ease 0s;
+  
+
+}
+.navbar.solid .navbar-nav > li > a {
+  color: white;
+  transition: color 1s ease 0s;
+  
+
+}
+
+.about {
+  background-color: white;
+  /* background: url(./Images/Alabama.png) no-repeat center center; */
+  /* color: #c6ae9a; */
+  height: 600px;
+  text-align: center;
+  margin-top: -20px;
+  /* filter: sepia(80%);
+  filter: opacity(20%); */
+  height: 670px;
+  margin-left: 0%;
+}
+.about h1 {
+  padding-top: 160px;
+  
+
+}
+
+.about img{
+  height: 300px;
+  
+}
+
+#tools{
+  /* padding-left: 100px; */
+  height: 725px;
+  width: 100%;
+  padding-top: 70px;
+  /* border-color: black;
+  border: 50px; */
+}
+
+#tools1{
+  /* padding-left: 100px; */
+  height: 700px;
+  width: 100%;
+  padding-left: 100px;
+}
+
+/* #dashboards{
+
+} */
+
+.cards {
+  position: relative;  
+  list-style-type: none;
+  padding: 0;
+  max-width: 34em;
+  margin: 20% auto 0;
+  left: 2
+}
+
+#cards{
+  padding-top: 20px;
+  padding-bottom: 250px;
+}
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  
+  background: #ccc;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 0 40px #000;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+  
+  
+  transition: transform 0.6s cubic-bezier(.8,.2,.1,0.8) 0.1s,
+    background 0.4s linear;
+  
+  cursor: pointer;
+  user-select: none;
+  
+  /* :last-child { margin-bottom: 0; } */
+}
+
+.card--next { 
+  z-index: 5; 
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+
+.card--out {
+  animation: card-out 0.6s cubic-bezier(.8,.2,.1,0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: #A9A9A9;
+}
+
+@keyframes card-out {
+  0% { z-index: 20; transform: translateY(0px) rotate(-8deg); }
+  50% { transform: translateY(-120%) rotate(-8deg) translateX(-40px); }
+  80% { z-index: 1; }
+  100% { transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95); }
+}
+
+.card--current {
+  cursor: auto;
+  user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: #EEE;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+
+
+/* carousel */
